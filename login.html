@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM PENDAFTARAN</title>
+</head>
+<style>
+<body>
+   { font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #272931;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #02090f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 10px;
+  background-color: #4464f7;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Form Pendaftaran</h2>
+    <p>Tahun 2025</p>
+  </div>
+
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="Name" placeholder="Your name..">
+         <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email..">
+        <label for="Password">Password</label>
+        <input type="text" id="Password" name="Password" placeholder="Your Password..">
+        </select>
+        <input type="submit" value="Submit">
+        <!-- Tabel Daftar Produk -->
+    <h2>Daftar Produk</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama Produk</th>
+                <th>Harga</th>
+                <th>Ketersediaan Stok</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Beras</td>
+                <td>Rp 50.000</td>
+                <td>Tersedia</td>
+            </tr>
+            <tr>
+                <td>Minyak 5kg</td>
+                <td>Rp 75.000</td>
+                <td>Tidak Tersedia</td>
+            </tr>
+            <tr>
+                <td>Ayam fillet</td>
+                <td>Rp 100.000</td>
+                <td>Tersedia</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tombol Pesan Selamat Datang -->
+    <h2>Order Product</h2>
+    <button id="welcomeButton">Click</button>
+
+    <script>
+        // Fungsi untuk menampilkan pesan
+        function tampilkanPesan() {
+            alert("Selamat Datang!");
+        }
+
+        // Menghubungkan tombol dengan fungsi
+        document.getElementById("welcomeButton").addEventListener("click", tampilkanPesan);
+    </script>
+      </form>
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>
